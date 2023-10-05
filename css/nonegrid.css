@@ -1,0 +1,66 @@
+/* -------------------------------------------- */
+/* ------------------Grid System--------------- */ 
+.nonegrid{ width: 1200px; position: relative; margin: 0 auto; padding: 0px;}
+.nonegrid:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+.nonegrid .f-right{float: right!important;}
+.nonegrid .f-left{float: left!important;}
+
+.nonegrid .row:before,.row:after { content: '\0020'; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+.nonegrid .row:after{clear: both; }
+.nonegrid .row{zoom: 1;}
+
+.nonegrid .wrap-col{margin:10px;}
+
+.nonegrid .col-1-2, .nonegrid .col-1-3, .nonegrid .col-2-3, .nonegrid .col-1-4, .nonegrid .col-2-4, .nonegrid .col-3-4, .nonegrid .col-1-5, .nonegrid .col-2-5, .nonegrid .col-3-5, .nonegrid .col-4-5, .nonegrid .col-1-6, .nonegrid .col-2-6, .nonegrid .col-3-6, .nonegrid .col-4-6, .nonegrid .col-5-6{float: left;}
+
+.nonegrid .col-full{width:100%;}
+
+.nonegrid .col-1-2,.nonegrid .col-1-2-fixed{width:50%;}
+.nonegrid .offset-1-2{margin-left: 50%;}
+
+.nonegrid .col-1-3,.nonegrid .col-1-3-fixed{width:33%;}
+.nonegrid .col-2-3,.nonegrid .col-2-3-fixed{width:66.66%;}
+.nonegrid .offset-1-3{margin-left: 33.33%;}
+.nonegrid .offset-2-3{margin-left: 66.66%;}
+
+.nonegrid .col-1-4,.nonegrid .col-1-4-fixed{width:25%;}
+.nonegrid .col-2-4,.nonegrid .col-2-4-fixed{width:50%;}
+.nonegrid .col-3-4,.nonegrid .col-3-4-fixed{width:75%;}
+.nonegrid .offset-1-4{margin-left: 25%;}
+.nonegrid .offset-2-4{margin-left: 50%;}
+.nonegrid .offset-3-4{margin-left: 75%;}
+
+.nonegrid .col-1-5,.nonegrid .col-1-5-fixed{width:20%;}
+.nonegrid .col-2-5,.nonegrid .col-2-5-fixed{width:40%;}
+.nonegrid .col-3-5,.nonegrid .col-3-5-fixed{width:60%;}
+.nonegrid .col-4-5,.nonegrid .col-4-5-fixed{width:80%;}
+.nonegrid .offset-1-5{margin-left: 20%;}
+.nonegrid .offset-2-5{margin-left: 40%;}
+.nonegrid .offset-3-5{margin-left: 60%;}
+.nonegrid .offset-4-5{margin-left: 80%;}
+
+.nonegrid .col-1-6,.nonegrid .col-1-6-fixed{width:16.66%;}
+.nonegrid .col-2-6,.nonegrid .col-2-6-fixed{width:33.33%;}
+.nonegrid .col-3-6,.nonegrid .col-3-6-fixed{width:50%;}
+.nonegrid .col-4-6,.nonegrid .col-4-6-fixed{width:66.66%;}
+.nonegrid .col-5-6,.nonegrid .col-5-6-fixed{width:83.33%;}
+.nonegrid .offset-1-6{margin-left: 16.66%;}
+.nonegrid .offset-2-6{margin-left: 33.33%;}
+.nonegrid .offset-3-6{margin-left: 50%;}
+.nonegrid .offset-4-6{margin-left: 66.66%;}
+.nonegrid .offset-5-6{margin-left: 83.33%;}
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+	.nonegrid{width:960px;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.nonegrid{width:768px;}
+}
+
+@media only screen and (max-width: 767px) {
+	.nonegrid, .nonegrid .col-1-2, .nonegrid .col-1-3, .nonegrid .col-2-3, .nonegrid .col-1-4, .nonegrid .col-2-4, .nonegrid .col-3-4, .nonegrid .col-1-5, .nonegrid .col-2-5, .nonegrid .col-3-5, .nonegrid .col-4-5, .nonegrid .col-1-6, .nonegrid .col-2-6, .nonegrid .col-3-6, .nonegrid .col-4-6, .nonegrid .col-5-6{width:100%;}
+	
+	.nonegrid .offset-1-2, .nonegrid .offset-1-3, .nonegrid .offset-2-3, .nonegrid .offset-1-4, .nonegrid .offset-2-4, .nonegrid .offset-3-4, .nonegrid .offset-1-5, .nonegrid .offset-2-5, .nonegrid .offset-3-5, .nonegrid .offset-4-5, .nonegrid .offset-1-6, .nonegrid .offset-2-6, .nonegrid .offset-3-6, .nonegrid .offset-4-6, .nonegrid .offset-5-6{margin-left:0;}
+}
